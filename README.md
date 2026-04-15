@@ -26,10 +26,6 @@ It is mainly used for:
 
 ## System Signals
 
-<p align="center">
-  <img src="./System%20Signals.png" width="700"/>
-</p>
-
 The system signals include inputs, internal states, and outputs used for analysis and monitoring of the battery behavior.
 
 Note:
@@ -37,10 +33,8 @@ System signals represent the full model interaction, while output signals are on
 
 ---
 
-## Output Results
-
 <p align="center">
-  <img src="./output%20signals.png" width="700"/>
+  <img src="./System%20Signals.png" width="700"/>
 </p>
 
 The simulation results show:
