@@ -7,6 +7,11 @@
 This project presents an electro-thermal lithium-ion battery cell model developed using MATLAB, Simulink, and Simscape Electrical.
 
 The model captures both electrical and thermal behavior of a lithium-ion battery cell to enable realistic simulation under dynamic operating conditions.
+## Block Diagram
+
+<p align="center">
+  <img src="./Block Diagram2.png" width="750"/>
+</p>
 
 It is mainly used for:
 - Electric Vehicle (EV) systems
