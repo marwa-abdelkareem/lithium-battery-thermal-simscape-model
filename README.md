@@ -1,62 +1,101 @@
-# Lithium-Ion Battery Electro-Thermal Model
+# Lithium-Ion Battery Electro-Thermal Model – MATLAB/Simscape
 
 ---
 
-## Overview
-
-This project presents an electro-thermal lithium-ion battery cell model developed using MATLAB, Simulink, and Simscape Electrical.
-
-The model captures both electrical and thermal behavior of a lithium-ion battery cell to enable realistic simulation under dynamic operating conditions.
-## Block Diagram
-
 <p align="center">
-  <img src="./Block Diagram2.png" width="750"/>
+  <img src="Block Diagram2.png" width="750"/>
 </p>
 
-It is mainly used for:
-- Electric Vehicle (EV) systems
-- Battery Management Systems (BMS)
-- Energy Storage Systems (ESS)
-- Academic and research studies
+## Project Overview
+
+This project presents a **coupled electro-thermal lithium-ion battery model** developed using **MATLAB, Simulink, and Simscape Electrical**.
+
+The model captures both **electrical dynamics and thermal behavior** of a lithium-ion battery cell to enable realistic simulation under dynamic load conditions.
 
 ---
 
-## Model Overview
+## Engineering Motivation
+
+Accurate battery modeling is essential for:
+- Electric Vehicle (EV) system design  
+- Battery Management Systems (BMS) development  
+- Energy Storage System (ESS) optimization  
+- Thermal safety analysis and validation  
+
+---
+
+## Model Architecture
 
 <p align="center">
-  <img src="./Simulink%20model%20Battery.png" width="700"/>
+  <img src="Simulink model Battery.png" width="750"/>
 </p>
+
+**Figure 1: Electro-thermal lithium-ion battery Simulink model**
 
 ---
 
 ## System Signals
 
-The system signals include inputs, internal states, and outputs used for analysis and monitoring of the battery behavior.
+<p align="center">
+  <img src="System Signals.png" width="750"/>
+</p>
 
-Note:
-System signals represent the full model interaction, while output signals are only a subset of measured results.
+System signals represent:
+- Internal states of the battery model  
+- Input/output interactions  
+- Monitoring variables for analysis  
 
 ---
 
+## Simulation Results
+
 <p align="center">
-  <img src="./System%20Signals.png" width="700"/>
+  <img src="output signals.png" width="750"/>
 </p>
 
-The simulation results show:
-- Battery voltage response
-- State of Charge (SOC)
-- Temperature variation
-- System performance under load
+**Figure 2: Battery output response under dynamic load conditions**
+
+### Key Observations
+- Stable voltage response under varying load  
+- Accurate State of Charge (SOC) evolution  
+- Temperature rise due to internal heat generation  
+- Strong electro-thermal coupling behavior  
 
 ---
 
 ## Objectives
 
-- Develop a coupled electro-thermal battery model
-- Simulate SOC under dynamic load conditions
-- Analyze heat generation and thermal effects
-- Evaluate performance under different scenarios
-- Support BMS testing and validation
+- Develop a coupled electro-thermal battery model  
+- Simulate SOC under dynamic operating conditions  
+- Analyze heat generation and thermal effects  
+- Evaluate battery performance under load variations  
+- Support BMS design and validation workflows  
+
+---
+
+## Model Features
+
+### Electrical Domain
+- Equivalent circuit battery model  
+- Internal resistance effects  
+- SOC estimation  
+- Voltage response dynamics  
+
+### Thermal Domain
+- Heat generation modeling  
+- Thermal mass representation  
+- Temperature dynamics  
+- Electro-thermal coupling  
+
+---
+
+## Applications
+
+- Electric Vehicle battery systems  
+- Battery Management Systems (BMS)  
+- Energy Storage Systems (ESS)  
+- Thermal safety analysis  
+- Academic and research simulations  
 
 ---
 
@@ -68,60 +107,32 @@ The simulation results show:
 
 ---
 
-## Features
-
-Electrical:
-- Equivalent circuit model
-- Internal resistance
-- SOC estimation
-- Voltage response
-
-Thermal:
-- Heat generation
-- Thermal mass modeling
-- Temperature dynamics
-- Electro-thermal coupling
-
----
-
 ## How to Run
 
 1. Clone the repository  
 2. Open MATLAB  
 3. Navigate to project folder  
 4. Open `batteryCellModelling.slx`  
-5. Click Run
+5. Click Run  
 
 ---
 
-## Repository Structure
+## System Files
 
-- batteryCellModelling.slx  
-- Simulink model Battery.png  
-- System Signals.png  
-- output signals.png  
-- README.md  
-- LICENSE  
-
----
-
-## Applications
-
-- EV battery modeling
-- Thermal management systems
-- Energy storage systems
-- Battery performance analysis
-- Academic simulations
+- `batteryCellModelling.slx` → Main Simulink model  
+- `Block Diagram2.png` → System architecture  
+- `Simulink model Battery.png` → Model implementation  
+- `System Signals.png` → Internal signal structure  
+- `output signals.png` → Simulation results  
 
 ---
 
 ## Author
 
-Marwa Abdelkareem  
+**Marwa Abdelkareem**  
 GitHub: marwa-abdelkareem  
 
 ---
 
 ## License
-
 This project is licensed under the MIT License.
